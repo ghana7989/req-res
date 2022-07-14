@@ -62,7 +62,7 @@ const IA_INITIAL_DATA = {
 			},
 		],
 	},
-	consultationCard: {
+	bookAppointmentCard: {
 		title: 'Your Doctor is ready now for the consultation call',
 		typesOfCall: [
 			{
