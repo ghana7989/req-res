@@ -1,0 +1,17 @@
+IA Video/Audio FLow
+- GET - Fetch Initial Data, a static JSON
+- POST - API to confirm the selected appointment, need data to initiate the call
+    - POST -  Cancel the appointment
+    - GET - need to do polling (as said) to get the status of the doctor (need to use SSE or WS to get real time)
+    - GET - need to do polling (as said) to get the status prescription
+    - GET - Prescription Details along with Prescription PDF link
+    - POST - Buy Now this should take to payment page along with required data in payment screen
+- GET - API to schedule the call and get list of available doctors
+    - POST - Selected Doctor which returns the preferred options with that doctor selected
+    - POST - With all the selected options, this call actually confirms and schedules the consultation
+    - POST - If Health Details are updated after the schedule, to update them
+
+- POST - An end point to initiate Schedule Appointment flow
+
+Wellness Assessment
+- POST - With Selected options and the type of JSON follows IA_WA interface
