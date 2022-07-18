@@ -62,7 +62,7 @@ const IA_INITIAL_DATA = {
 			},
 		],
 	},
-	bookAppointmentCard: {
+	consultationCard: {
 		title: 'Your doctor is ready now for the consultation call',
 		consultation_title:
 			'John, some of your products require a doctor consultation. Take your consultation now!',
