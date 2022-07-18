@@ -63,39 +63,44 @@ const IA_INITIAL_DATA = {
 		],
 	},
 	bookAppointmentCard: {
-		title: 'Your Doctor is ready now for the consultation call',
-		typesOfCall: [
+		title: 'Your doctor is ready now for the consultation call',
+		consultation_title:
+			'John, some of your products require a doctor consultation. Take your consultation now!',
+		availability: 'Doctors are available within the next 2 minutes',
+		subtitle: 'Not free right now',
+		subtext: 'wmudiddueieee',
+		onCallClick,
+		onLanguageClick,
+		sections: [
 			{
-				id: 'audio',
-				text: 'Audio',
-				isSelected: true,
+				title: 'Select a call type',
+				items: [
+					{
+						id: 'audio',
+						text: 'Audio',
+					},
+					{
+						id: 'video',
+						text: 'Video',
+					},
+				],
 			},
 			{
-				id: 'video',
-				text: 'Video',
-				isSelected: false,
-			},
-		],
-		languages: [
-			{
-				id: 'english',
-				text: 'English',
-				isSelected: true,
-			},
-			{
-				id: 'hindi',
-				text: 'Hindi',
-				isSelected: false,
-			},
-			{
-				id: 'marathi',
-				text: 'Marathi',
-				isSelected: false,
-			},
-			{
-				id: 'telugu',
-				text: 'Telugu',
-				isSelected: false,
+				title: 'Select Language',
+				items: [
+					{
+						id: 'english',
+						text: 'English',
+					},
+					{
+						id: 'hindi',
+						text: 'Hindi',
+					},
+					{
+						id: 'tamil',
+						text: 'Tamil',
+					},
+				],
 			},
 		],
 	},
