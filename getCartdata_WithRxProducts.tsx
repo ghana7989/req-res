@@ -1,3 +1,5 @@
+//When the cart contains Rx prodcuts we will get data to show the appointment selection box and subsequently use the appointment
+//getSlots API to check whether we have to trigger the IA flow or the schedule appointment flow
 export const resRXProductWhenIAAvailable = {
   status: true,
   errorCode: 200,
@@ -91,7 +93,6 @@ export const resRXProductWhenIAAvailable = {
       null,
     ],
     bookAnAppointment: {
-      isIA: true,
       title: "Book an Appointment",
       subTitle:
         "John, some of your products require a doctor consultation. Take your consultation now!",
@@ -443,7 +444,6 @@ export const resRXProductWhenIANOTAvailable = {
       null,
     ],
     bookAnAppointment: {
-      isIA: false,
       title: "Book an Appointment",
       subTitle:
         "John, some of your products require a doctor consultation. Take your consultation now!",
@@ -585,6 +585,8 @@ export const resRXProductWhenIANOTAvailable = {
     ],
   },
 };
+
+// We will hit the getSlots API on either the payment page on the cart flow to check whether IA is available or not
 
 // This data should go the bottomsheet component
 export const getScheduleAppointmentData = {

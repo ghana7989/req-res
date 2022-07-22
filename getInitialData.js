@@ -1,3 +1,4 @@
+// A simple get call
 const req = {};
 
 const IA_INITIAL_DATA = {
