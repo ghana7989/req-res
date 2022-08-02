@@ -16,12 +16,15 @@ const res = {
 				'https://raw.githubusercontent.com/omkarmosaic1234/TestImages/main/ic_purple_video.png',
 			label: 'Consultations will be done on video call with Doctors',
 		},
-		appointmentScheduled: {
-			date: '22 Feb,2029',
-			time: '12:00PM',
-			appointmentDate: 'Appointment Date',
-			appointmentTime: 'Appointment Time',
-		},
+		  appointmentScheduled: {
+    doctorName: ‘Dr. John Doe’,
+    appointmentDate: ‘12/12/2020’,
+    appointmentTime: ‘12:00 - 12:30 PM’,
+    designation: ‘MBBS, MD’,
+    doctorImage:
+      ‘https://res.cloudinary.com/mosaic-wellness/image/upload/v1655107431/Man%20Matters%20App/Miscellaneous/doc_pic.png’,
+    rating: ‘4.5’,
+  },
 		healthDetailsCard: {
 			title: 'Health Details',
 			categories: ['Hair', 'Skin', 'Performance', 'Weight', 'Beard'],
